@@ -6,11 +6,34 @@
 </head>
 <body>
 
+<ul>
 {{range .}}
 
-<!-- PUT YOUR CODE HERE TO SHOW THE DATA-->
+    <li>
+        <div>{{.AcaYear}}</div>
+        <ul>
+            <li>
+                <div>{{.Fall.Term}}</div>
+                <ul>
+                {{range .Fall.Courses}}
+                    <li>{{.Number}} - {{.Name}} ({{.Units}})</li>
+                {{end}}
+                </ul>
+            </li>
+
+            <li>
+                <div>{{.Spring.Term}}</div>
+                <ul>
+                {{range .Spring.Courses}}
+                    <li>{{.Number}} - {{.Name}} ({{.Units}})</li>
+                {{end}}
+                </ul>
+            </li>
+        </ul>
+    </li>
 
 {{end}}
+</ul>
 
 </body>
 </html>
