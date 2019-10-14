@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Hands-on</title>
+</head>
+<body>
+
+<script>
+    var codes = [
+        {"Code":200, "Desc":"StatusOK"},
+        {"Code":301, "Desc":"StatusMovedPermanently"},
+        {"Code":302, "Desc":"StatusFound"},
+        {"Code":303, "Desc":"StatusSeeOther"},
+        {"Code":307, "Desc":"StatusTemporaryRedirect"},
+        {"Code":400, "Desc":"StatusBadRequest"},
+        {"Code":401, "Desc":"StatusUnauthorized"},
+        {"Code":402, "Desc":"StatusPaymentRequired"},
+        {"Code":403, "Desc":"StatusForbidden"},
+        {"Code":404, "Desc":"StatusNotFound"},
+        {"Code":405, "Desc":"StatusMethodNotAllowed"},
+        {"Code":418, "Desc":"StatusTeapot"},
+        {"Code":500, "Desc":"StatusInternalServerError"}
+    ];
+    var transmit = JSON.stringify(codes);
+    document.write(transmit);
+</script>
+</body>
+</html>
